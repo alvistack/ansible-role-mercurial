@@ -21,7 +21,7 @@ _yum_repository: [
     description: "mercurial.selenic.com",
     baseurl: "https://www.mercurial-scm.org/release/centos$releasever",
     gpgcheck: "false",
-    enabled: "yes",
+    enabled: true,
   },
 ]
 _yum: [
