@@ -22,6 +22,7 @@ _yum_repository: [
     baseurl: "https://www.mercurial-scm.org/release/centos$releasever",
     gpgcheck: "false",
     enabled: true,
+    state: "present",
   },
 ]
 _yum: [

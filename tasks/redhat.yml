@@ -22,6 +22,7 @@
     baseurl: "{{ item.baseurl }}"
     gpgcheck: "{{ item.gpgcheck }}"
     enabled: "{{ item.enabled }}"
+    state: "{{ item.state }}"
   with_items: "{{ _yum_repository }}"
   tags: mercurial
 
