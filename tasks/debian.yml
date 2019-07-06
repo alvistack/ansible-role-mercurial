@@ -18,14 +18,14 @@
   apt_repository:
     repo: "{{ item.repo }}"
     state: "{{ item.state }}"
-  with_items: "{{ _apt_repository }}"
+  loop: "{{ _apt_repository }}"
   tags: mercurial
 
 - name: apt-get install
   apt:
     name: "{{ item.name }}"
     state: "{{ item.state }}"
-  with_items: "{{ _apt }}"
+  loop: "{{ _apt }}"
   register: result
   until: result is succeeded
   tags: mercurial
