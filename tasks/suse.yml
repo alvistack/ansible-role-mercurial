@@ -14,6 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+- name: zypper addrepo
+  zypper_repository:
+    name: "{{ item.name }}"
+    repo: "{{ item.repo }}"
+    state: "{{ item.state }}"
+    disable_gpg_check: true
+    auto_import_keys: true
+    autorefresh: true
+  loop: "{{ _zypper_repository }}"
+  tags: mercurial
+
 - name: zypper install
   zypper:
     name: "{{ item.name }}"
