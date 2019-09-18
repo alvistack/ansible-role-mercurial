@@ -14,9 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_apt_repository: [
-  { state: "present", repo: "ppa:jonathonf/mercurial" },
-]
-_apt: [
-  { state: "latest", name: "mercurial" },
-]
+_apt_repository:
+  - { state: "present", repo: "ppa:jonathonf/mercurial" }
+
+_apt:
+  - { state: "latest", name: "mercurial" }
