@@ -14,21 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: apt-get install gnupg
-  apt:
-    name: "gnupg"
-    state: "present"
-  register: result
-  until: result is succeeded
-  tags: mercurial
-
-- name: apt-add-repository
-  apt_repository:
-    repo: "{{ item.repo }}"
-    state: "{{ item.state }}"
-  loop: "{{ _apt_repository }}"
-  tags: mercurial
-
 - name: apt-get install
   apt:
     name: "{{ item.name }}"
