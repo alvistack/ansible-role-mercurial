@@ -24,9 +24,7 @@
   remote_user: root
   become: true
   tasks:
-    - name: su -l -s /bin/bash -c 'hg --version'
-      command: su -l -s /bin/bash -c 'hg --version'
-      args:
-        warn: false
+    - name: hg --version
+      command: hg --version
       register: result
       changed_when: result is not succeeded
