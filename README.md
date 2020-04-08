@@ -1,6 +1,6 @@
 # Ansible Role for Mercurial
 
-[![Travis](https://img.shields.io/travis/alvistack/ansible-role-mercurial.svg)](https://travis-ci.org/alvistack/ansible-role-mercurial)
+[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-mercurial.svg)](https://travis-ci.com/alvistack/ansible-role-mercurial)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-mercurial.svg)](https://github.com/alvistack/ansible-role-mercurial)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-mercurial.svg)](https://github.com/alvistack/ansible-role-mercurial/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.mercurial-blue.svg)](https://galaxy.ansible.com/alvistack/mercurial)
@@ -11,7 +11,7 @@ Ansible Role for Mercurial Installation.
 
 This role require Ansible 2.9 or higher.
 
-This role was designed for Ubuntu 16.04/18.04/19.10 or RHEL/CentOS 7 or openSUSE Leap 15.1.
+This role was designed for Ubuntu 16.04/18.04/19.10 or RHEL/CentOS 7/8 or openSUSE Leap 15.1.
 
 ## Role Variables
 
@@ -23,7 +23,7 @@ This role was designed for Ubuntu 16.04/18.04/19.10 or RHEL/CentOS 7 or openSUSE
 
 ## Example Playbook
 
-[molecule/ubuntu-18.04/playbook.yml](molecule/ubuntu-18.04/playbook.yml)
+[molecule/default/converge.yml](molecule/default/converge.yml)
 
 ## License
 
