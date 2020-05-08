@@ -18,7 +18,7 @@ _yum_repository:
   - file: "mercurial.selenic.com"
     name: "mercurial.selenic.com"
     description: "mercurial.selenic.com"
-    baseurl: "https://www.mercurial-scm.org/release/centos$releasever"
+    baseurl: "https://www.mercurial-scm.org/release/centos8"
     gpgcheck: "false"
     enabled: true
     state: "present"

@@ -14,14 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_yum_repository:
-  - file: "mercurial.selenic.com"
-    name: "mercurial.selenic.com"
-    description: "mercurial.selenic.com"
-    baseurl: "https://www.mercurial-scm.org/release/centos8"
-    gpgcheck: "false"
-    enabled: true
-    state: "present"
+_yum_repository: []
 
 _yum:
   - { state: "latest", name: "mercurial" }

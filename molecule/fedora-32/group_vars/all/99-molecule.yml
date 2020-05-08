@@ -13,15 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-_yum_repository:
-  - file: "mercurial.selenic.com"
-    name: "mercurial.selenic.com"
-    description: "mercurial.selenic.com"
-    baseurl: "https://www.mercurial-scm.org/release/centos8"
-    gpgcheck: "false"
-    enabled: true
-    state: "present"
-
-_yum:
-  - { state: "latest", name: "mercurial" }
