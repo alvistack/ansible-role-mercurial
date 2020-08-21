@@ -15,12 +15,13 @@
 # limitations under the License.
 
 _yum_repository:
-  - file: "mercurial.selenic.com"
-    name: "mercurial.selenic.com"
-    description: "mercurial.selenic.com"
+  - file: "mercurial"
+    name: "mercurial"
+    description: "Mercurial packages for CentOS 7"
     baseurl: "https://www.mercurial-scm.org/release/centos7"
-    gpgcheck: "false"
     enabled: true
+    priority: "2"
+    gpgcheck: "false"
     state: "present"
 
 _yum:
