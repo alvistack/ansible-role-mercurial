@@ -1,7 +1,7 @@
 # Ansible Role for Mercurial
 
 [![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-mercurial.svg)](https://travis-ci.com/alvistack/ansible-role-mercurial)
-[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-mercurial.svg)](https://github.com/alvistack/ansible-role-mercurial)
+[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-mercurial.svg)](https://github.com/alvistack/ansible-role-mercurial/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-mercurial.svg)](https://github.com/alvistack/ansible-role-mercurial/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.mercurial-blue.svg)](https://galaxy.ansible.com/alvistack/mercurial)
 
