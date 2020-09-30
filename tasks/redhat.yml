@@ -25,7 +25,6 @@
     gpgcheck: "{{ item.gpgcheck }}"
     state: "{{ item.state }}"
   loop: "{{ _yum_repository }}"
-  tags: mercurial
 
 - name: yum install
   yum:
@@ -34,4 +33,3 @@
   loop: "{{ _yum }}"
   register: result
   until: result is succeeded
-  tags: mercurial
