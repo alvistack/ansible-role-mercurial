@@ -1,6 +1,6 @@
 # Ansible Role for Mercurial
 
-[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-mercurial.svg)](https://travis-ci.com/alvistack/ansible-role-mercurial)
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-mercurial/master)](https://gitlab.com/alvistack/ansible-role-mercurial/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-mercurial.svg)](https://github.com/alvistack/ansible-role-mercurial/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-mercurial.svg)](https://github.com/alvistack/ansible-role-mercurial/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.mercurial-blue.svg)](https://galaxy.ansible.com/alvistack/mercurial)
@@ -13,11 +13,11 @@ This role require Ansible 2.10 or higher.
 
 This role was designed for:
 
-  - Ubuntu 18.04/20.04
+  - Ubuntu 18.04/20.04/20.10
   - RHEL/CentOS 7/8
   - openSUSE Leap 15.2
   - Debian 10
-  - Fedora 32
+  - Fedora 33
 
 ## Role Variables
 
