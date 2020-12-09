@@ -20,7 +20,7 @@
   tasks:
     - name: hg --version
       shell: |
-        set -o pipefail
+        set -euo pipefail
         hg --version
       args:
         executable: "/bin/bash"
