@@ -18,7 +18,7 @@ _yum_repository:
   - file: "mercurial"
     name: "mercurial"
     description: "Mercurial packages for CentOS 7"
-    baseurl: "https://www.mercurial-scm.org/release/centos7"
+    baseurl: "http://www.mercurial-scm.org/release/centos7"
     enabled: true
     priority: "2"
     gpgcheck: "false"
