@@ -21,6 +21,7 @@ _yum_repository:
     baseurl: "http://www.mercurial-scm.org/release/centos7"
     enabled: true
     priority: "2"
+    module_hotfixes: true
     gpgcheck: "false"
     state: "present"
 

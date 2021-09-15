@@ -22,6 +22,7 @@
     baseurl: "{{ item.baseurl }}"
     enabled: "{{ item.enabled }}"
     priority: "{{ item.priority }}"
+    module_hotfixes: "{{ item.module_hotfixes }}"
     gpgcheck: "{{ item.gpgcheck }}"
     state: "{{ item.state }}"
   loop: "{{ _yum_repository }}"
