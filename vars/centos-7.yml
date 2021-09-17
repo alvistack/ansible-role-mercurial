@@ -14,6 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_rpm_key:
+  - key: "http://www.mercurial-scm.org/release/centos7/centos.gpg"
+    fingerprint: "6CAB762D9F693932460D188141E2E8CF5FCE4796"
+    state: "present"
+
 _yum_repository:
   - file: "mercurial"
     name: "mercurial"
@@ -22,7 +27,8 @@ _yum_repository:
     enabled: true
     priority: "2"
     module_hotfixes: true
-    gpgcheck: "false"
+    gpgcheck: true
+    gpgkey: "http://www.mercurial-scm.org/release/centos7/centos.gpg"
     state: "present"
 
 _yum:
