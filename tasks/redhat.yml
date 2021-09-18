@@ -14,6 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+- name: rpm --import
+  rpm_key:
+    key: "{{ item.key }}"
+    fingerprint: "{{ item.fingerprint }}"
+    state: "{{ item.state }}"
+  loop: "{{ _rpm_key }}"
+  register: result
+  until: result is succeeded
+
 - name: yum-config-manager --add-repo
   yum_repository:
     file: "{{ item.file }}"
@@ -24,6 +33,7 @@
     priority: "{{ item.priority }}"
     module_hotfixes: "{{ item.module_hotfixes }}"
     gpgcheck: "{{ item.gpgcheck }}"
+    gpgkey: "{{ item.gpgkey }}"
     state: "{{ item.state }}"
   loop: "{{ _yum_repository }}"
 
