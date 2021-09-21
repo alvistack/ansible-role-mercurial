@@ -1,5 +1,7 @@
 # Ansible Role for Mercurial
 
+<img src="/alvistack.svg" width="75" alt="AlviStack">
+
 [![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-mercurial/master)](https://gitlab.com/alvistack/ansible-role-mercurial/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-mercurial.svg)](https://github.com/alvistack/ansible-role-mercurial/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-mercurial.svg)](https://github.com/alvistack/ansible-role-mercurial/blob/master/LICENSE)
