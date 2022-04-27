@@ -20,5 +20,5 @@
   tasks:
     - name: include role
       ansible.builtin.include_role:
-        name: mercurial
-      tags: mercurial
+        name: alvistack.mercurial
+      tags: alvistack.mercurial
