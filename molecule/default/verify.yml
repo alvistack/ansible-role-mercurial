@@ -20,9 +20,10 @@
   become: true
   tasks:
     - name: hg --version
-      ansible.builtin.shell: |
-        set -euxo pipefail
-        hg --version
+      ansible.builtin.shell:
+        cmd: |
+          set -euxo pipefail
+          hg --version
       args:
         executable: "/bin/bash"
       register: result
