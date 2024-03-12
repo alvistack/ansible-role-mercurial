@@ -15,21 +15,21 @@
 # limitations under the License.
 
 _rpm_key:
-  - key: "http://www.mercurial-scm.org/release/centos8/centos.gpg"
-    fingerprint: "6CAB762D9F693932460D188141E2E8CF5FCE4796"
-    state: "present"
+  - key: http://www.mercurial-scm.org/release/centos8/centos.gpg
+    fingerprint: 6CAB762D9F693932460D188141E2E8CF5FCE4796
+    state: present
 
 _yum_repository:
-  - file: "mercurial"
-    name: "mercurial"
-    description: "Mercurial packages for CentOS 8"
-    baseurl: "http://www.mercurial-scm.org/release/centos8"
+  - file: mercurial
+    name: mercurial
+    description: Mercurial packages for CentOS 8
+    baseurl: http://www.mercurial-scm.org/release/centos8
     enabled: true
     priority: "2"
     module_hotfixes: true
     gpgcheck: true
-    gpgkey: "http://www.mercurial-scm.org/release/centos8/centos.gpg"
-    state: "present"
+    gpgkey: http://www.mercurial-scm.org/release/centos8/centos.gpg
+    state: present
 
 _yum:
-  - { state: "latest", name: "mercurial" }
+  - { state: latest, name: mercurial }
