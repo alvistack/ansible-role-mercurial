@@ -15,20 +15,20 @@
 # limitations under the License.
 
 _rpm_key:
-  - key: http://www.mercurial-scm.org/release/centos9/centos.gpg
-    fingerprint: 6CAB762D9F693932460D188141E2E8CF5FCE4796
+  - key: http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-9
+    fingerprint: FF8AD1344597106ECE813B918A3872BF3228467C
     state: present
 
 _yum_repository:
-  - file: mercurial
-    name: mercurial
-    description: Mercurial packages for CentOS 9
-    baseurl: http://www.mercurial-scm.org/release/centos9
+  - file: epel
+    name: epel
+    description: Extra Packages for Enterprise Linux 9 - $basearch
+    baseurl: http://dl.fedoraproject.org/pub/epel/9/Everything/$basearch
     enabled: true
     priority: "2"
     module_hotfixes: true
     gpgcheck: true
-    gpgkey: http://www.mercurial-scm.org/release/centos9/centos.gpg
+    gpgkey: http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-9
     state: present
 
 _yum:
